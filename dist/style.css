@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#backgroundDiv {
+    width: 100vw;
+    height:100vh;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+ }
+
+
+#weatherDiv {
+    display: grid;
+    width: 400px; 
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: #A6CAD6;
+    color: white;
+    padding: 20px;
+    
+    
+
+}
+#weatherLogoDiv{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    height: 200px;
+    width: 200px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+#skySituation{
+    font-size: 30px;
+
+}
+#placeName{
+    display: flex;
+   justify-content: center;
+    font-family: sans-serif;
+    font-size: 80px;
+}
+#weatherInformationsLeft{
+    display: flex;
+}
+#temperature{
+    font-size: 100px;
+}
+#temperatureSymbol{
+    font-size: 30px;
+}
+
+#weatherInformations{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#weatherInformationsRight{
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 40%;
+    height: 20px;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+
+}
