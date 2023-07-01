@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    width: 100vw;
+    height: 100vh;
+}
 #backgroundDiv {
     width: 100vw;
     height:100vh;
@@ -20,13 +23,13 @@ img {
 
 #weatherDiv {
     display: grid;
-    width: 400px; 
+    width: 70vw; 
     position: absolute;
     top: 20%;
     left: 20%;
-    background-color: #A6CAD6;
-    color: white;
+    
     padding: 20px;
+    background-color: #FFE143;
     
     
 
@@ -92,4 +95,26 @@ button {
 button:hover {
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 
+}
+
+@media(max-width:1000px) {
+    
+   #weatherLogoDiv {
+    display: none;
+   }
+   #weatherDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    height: 50vh;
+   }
+   #mainDiv{
+    display: flex;
+    align-items: center;
+    
+   }
+   input{
+    width: 200px;
+   }
 }
